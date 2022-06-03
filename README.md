@@ -1,4 +1,3 @@
 # Movie-Recommneder-System
-If you select a movie of your choice then this recommender system recommends you five similar movies from the TMDB movies database. 
-I used heroku to deploy this app.
- Link of the recommender system : https://movie-recommendation-app-saman.herokuapp.com/
+This is an end to end project which takes a movie name as an input and recommends five similar movies with their posters. I used TMDB movie dataset from kaggle for this project. In this project  first I created tags for each movie using it’s overview, genres, keywords, cast, crew etc. then applied basic text pre-processing like stemming, stop words removal etc. on the tags using “nltk” library, then I applied “Bag of Words(BOW)”  for text vectorization using the class “CountVectorizer” of “sklearn” library. Finally calculated the similarity matrix of movies which shows the similarity of each movie with rest of the other movies, I used “cosine_similarity”  matrix of “sklearn”. I used  “streamlit” for the app framework and deployed this app on “heroku”.
+Link of the recommender system : https://movie-recommendation-app-saman.herokuapp.com/
